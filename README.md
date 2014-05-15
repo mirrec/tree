@@ -1,6 +1,6 @@
-== README
+# Uloha: filtrovanie stromovej struktury (lubovolnej hlbky)
 
-Ulohou je naprogramovat filtrovanie stromovej struktury (lubovolnej hlbky). Staci jeden controller a akciu, spolu s modelom.
+Staci jeden controller a akciu, spolu s modelom.
 Aplikacia musi byt pokryta testami na urovni modelu a akceptacnymi testami pomocou rspec + capybara. Zadanie musi byt implementovane vo verzii Ruby on Rails 4.1. Na databazu treba pouzit PostgreSQL. Zdrojove kody budu verzionovane pomocou nastroja git.
 
 Popis fungovanie filtra:
@@ -47,9 +47,15 @@ controller a view testovat netreba, dolezity je potom request test, ktory overi,
 
 Posielam aj nejake linky, ktore mozu pomoct. ako na tie testy napisat spravne
 http://railscasts.com/episodes/275-how-i-test
+
 http://railscasts.com/episodes/262-trees-with-ancestry
+
 http://railscasts.com/episodes/179-seed-data
+
 http://railscasts.com/episodes/405-angularjs
+
 https://github.com/jnicklas/capybara
+
 https://www.relishapp.com/rspec
+
 https://angularjs.org/
