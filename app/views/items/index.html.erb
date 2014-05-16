@@ -1,0 +1,16 @@
+<h1>Items tree</h1>
+ <div class="container">
+<%= form_tag("/items", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q, params[:q] || "", :autocomplete => "off" ) %>
+  <%= submit_tag("Search")  %>
+<% end %>
+
+
+</div>
+<br>
+</br>
+<%= link_to 'New Root Item', new_item_path %>
+
+
+ <%= nested_items @items.arrange(:order => :created_at) %>

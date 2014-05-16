@@ -1,0 +1,11 @@
+ <div class="item">
+      
+    <div class="content">
+      <%= item.name %>
+    </div>
+    <div class="actions">
+      <%= link_to "Add child", new_item_path(:parent_id => item) %> |
+      <%= link_to "Destroy", item, :confirm => "Are you sure?", :method => :delete %>
+    </div>
+  </div>
+
