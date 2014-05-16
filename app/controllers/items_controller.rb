@@ -7,20 +7,14 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
    if params[:q]
-    #@products = Product.search(params[:query])
-    # puts "hladame " + params[:q]
-    #@items = Item.find_by_name(:all, :conditions=> [ "name LIKE ?", "%#{params[:q]}%" ])
     
     najdene =Item.where("name LIKE ?", "%#{params[:q]}%" )
-    
-    puts "najdene  ----- " + najdene.to_a.join(",")
-
     list = parent_items_list(najdene)
 
-    puts "oparentovane ----- " + list.to_a.join(",")
-
     @items = Item.where(:id => list )
-    # [nasiel,nasiel.parent]
+
+
+    
   else
     #@products = []
     # puts "prazdne"

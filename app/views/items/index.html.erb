@@ -10,7 +10,15 @@
 </div>
 <br>
 </br>
-<%= link_to 'New Root Item', new_item_path %>
+<%= link_to  "New root item",
+            new_item_path,
+            :class => "btn btn-xs btn-primary"
+            %>
+<br>
+</br>
 
-
+<% if @items.to_a.length>0 %>
  <%= nested_items @items.arrange(:order => :created_at) %>
+<% else%>
+   No items found...
+<% end %>
