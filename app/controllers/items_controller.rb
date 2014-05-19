@@ -24,7 +24,7 @@ class ItemsController < ApplicationController
   respond_to do |format|
   format.html # index.html.erb
   format.xml  { render :xml => @items }
-  format.json { render :json => Item.json_tree(@items.arrange)}
+  format.json { render :json => Item.json_tree(@items.arrange(:order => :created_at))}
  end
 
 end

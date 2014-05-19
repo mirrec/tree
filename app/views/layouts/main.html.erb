@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html ng-app="plunker">
+<head>
+ <%= stylesheet_link_tag    "application", media: "all" %>
+ <%= javascript_include_tag "application", controller_name %>
+
+ <%= csrf_meta_tags %>
+
+ <script src="http://ci.angularjs.org/job/angularui-bootstrap/ws/dist/ui-bootstrap-tpls-0.1.1-SNAPSHOT.js"></script>
+ <%= render 'layouts/shim' %>
+</head>
+<body>
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <div ng-controller="DialogDemoCtrl">
+     <div>
+    
+      <label>Search for:</label>
+      <input type="text" ng-model="frmFindInTree" ng-model-instant placeholder="Enter a name here" >
+      <button class="btn" ng-click="najdi()">Search</button> 
+     
+    </div>
+     <br/>
+    <div class="span5 article-tree">
+      <div ng-style="{'overflow': 'auto'}">
+
+        <script type="text/ng-template"  id="tree_item_renderer">
+
+        <span  ng-click="nodeClicked(data)"  >
+
+        <i class="{{ switcher( isLeaf(data), '', 'icon-minus-sign' )}}"></i> 
+        {{showNode(data)}}
+        </span>
+        <!-- <a href="">{{data.name}}</a> -->
+
+        <ul class="some" ng-show="data.show">       
+
+        <li ng-repeat="data in data.nodes" class="parent_li"  ng-include="'tree_item_renderer'" tree-node></li>
+        </ul>
+
+        </script>
+
+        <div class="tree well">
+
+
+
+          <ul>
+            <li ng-repeat="data in displayTree"  ng-include="'tree_item_renderer'"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= render 'layouts/footer' %>
+</div>
+
+</body>
+</html>

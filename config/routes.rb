@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :items
 
   root :to => "items#index"
-
+  get "main/home"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
