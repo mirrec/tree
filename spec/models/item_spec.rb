@@ -11,3 +11,9 @@ describe Item do
 		it { should_not be_valid }
 	end
 end
+
+def self.json_tree(items)
+    items.map do |item, sub_items|
+      {:name => item.name, :id => item.id, :children => json_tree(sub_items).compact}
+    end
+end
