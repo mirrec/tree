@@ -1,2 +1,6 @@
 config/database.yml
-Gemfile~
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+# Ignore other unneeded files.
+*~
