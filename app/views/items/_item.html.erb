@@ -1,13 +1,13 @@
- <div class="item">
-      
-    <div class="content">
-    <b>	
+<div class="item">
+
+  <div class="content">
+    <b>
       <%= item.name %>
-     </b> 
-    </div>
-    <div class="actions">
-      <%= link_to "Add child", new_item_path(:parent_id => item), :class => "small" %>
-      <%= link_to " | Destroy", item, :confirm => "Are you sure?", :method => :delete, :class => "small"  %>
-    </div>
+    </b>
   </div>
+  <div class="actions">
+    <%= link_to "Add child", new_item_path(:parent_id => item), :class => "small" %>
+    <%= link_to " | Destroy", item, :confirm => "Are you sure?", :method => :delete, :class => "small"  %>
+  </div>
+</div>
 

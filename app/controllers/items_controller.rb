@@ -6,28 +6,30 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-   if params[:q]
+    if params[:q]
 
-    najdene =Item.where("name LIKE ?", "%#{params[:q]}%" )
-    list = parent_items_list(najdene)
 
-    @items = Item.where(:id => list )
-  
-  else
-    #@products = []
-    # puts "prazdne"
-    @items = Item.all
+
+      najdene =Item.where("name LIKE ?", "%#{params[:q]}%" )
+      list = parent_items_list(najdene)
+
+      @items = Item.where(:id => list )
+
+    else
+      #@products = []
+      # puts "prazdne"
+      @items = Item.all
+
+    end
+
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @items }
+      format.json { render :json => Item.json_tree(@items.arrange(:order => :created_at))}
+    end
 
   end
-
-  
-  respond_to do |format|
-  format.html # index.html.erb
-  format.xml  { render :xml => @items }
-  format.json { render :json => Item.json_tree(@items.arrange(:order => :created_at))}
- end
-
-end
 
   # GET /items/1
   # GET /items/1.json
@@ -38,12 +40,12 @@ end
   # GET /items/new
   def new
     #@item = Item.new
-  #  if params[:parent_id]
-  @item = Item.new(:parent_id=> params[:parent_id])
-   #   else
+    #  if params[:parent_id]
+    @item = Item.new(:parent_id=> params[:parent_id])
+    #   else
     #      @item = Item.new
     # end   
-    
+
   end
 
   # GET /items/1/edit
@@ -92,68 +94,68 @@ end
   end
 
   private
-    def render_json_tree (items)
-      Item.json_tree(items)
-    end
-    # Use callbacks to share common setup or constraints between actions.
-    def set_item
-      @item = Item.find(params[:id])
-    end
+  def render_json_tree (items)
+    Item.json_tree(items)
+  end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
-    def add_item(items_with_parents,item)
+  def add_item(items_with_parents,item)
 
-    end  
+  end
 
-    def parent_items_list (items, list = [])
+  def parent_items_list (items, list = [])
 
 
-      if items.respond_to?(:each)
-       items.each { |item| 
+    if items.respond_to?(:each)
+      items.each { |item|
         list << item.id
         if item.parent
-         parent_items_list(item.parent,list)
-         list << item.parent.id
-         puts "v cykle " + item.parent.name 
-       end   
-     }
+          parent_items_list(item.parent,list)
+          list << item.parent.id
+          puts "v cykle " + item.parent.name
+        end
+      }
 
 
-   else
-     if items.parent
-       parent_items_list(items.parent,list)
-       list << items.parent.id
-       puts "uz iba item " + items.parent.name
-     end 
-   end
-   return list
- end
-
- def parent_items(items,items_with_parents = Item.none)
-
-  if items.respond_to?(:each)
-   items.each { |item| 
-    if item.parent
-     parent_items(item.parent,items_with_parents )
-     items_with_parents << item.parent
-     puts "v cykle " + item.parent.name 
-   end   
- }
-
-
-else
- if items.parent
-   parent_items(items.parent,items_with_parents)
-   items_with_parents << items.parent
-   puts "uz iba item " + items.parent.name
- end 
-
-end
-
-items_with_parents 
-end 
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def item_params
-      params.require(:item).permit(:name,:parent_id)
+    else
+      if items.parent
+        parent_items_list(items.parent,list)
+        list << items.parent.id
+        puts "uz iba item " + items.parent.name
+      end
     end
+    return list
   end
+
+  def parent_items(items,items_with_parents = Item.none)
+
+    if items.respond_to?(:each)
+      items.each { |item|
+        if item.parent
+          parent_items(item.parent,items_with_parents )
+          items_with_parents << item.parent
+          puts "v cykle " + item.parent.name
+        end
+      }
+
+
+    else
+      if items.parent
+        parent_items(items.parent,items_with_parents)
+        items_with_parents << items.parent
+        puts "uz iba item " + items.parent.name
+      end
+
+    end
+
+    items_with_parents
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def item_params
+    params.require(:item).permit(:name,:parent_id)
+  end
+end

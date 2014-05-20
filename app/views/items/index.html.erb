@@ -1,24 +1,24 @@
 <h1>Items tree</h1>
- <div class="container">
-<%= form_tag("/items", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q, params[:q] || "", :autocomplete => "off" ) %>
-  <%= submit_tag("Search")  %>
-<% end %>
+<div class="container">
+  <%= form_tag("/items", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q, params[:q] || "", :autocomplete => "off" ) %>
+    <%= submit_tag("Search")  %>
+  <% end %>
 
 
 </div>
 <br>
 </br>
 <%= link_to  "New root item",
-            new_item_path,
-            :class => "btn btn-xs btn-primary"
-            %>
+             new_item_path,
+             :class => "btn btn-xs btn-primary"
+%>
 <br>
 </br>
 
 <% if @items.to_a.length>0 %>
- <%= nested_items @items.arrange(:order => :created_at) %>
+  <%= nested_items @items.arrange(:order => :created_at) %>
 <% else%>
-   No items found...
+  No items found...
 <% end %>
