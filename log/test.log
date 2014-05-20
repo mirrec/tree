@@ -1,0 +1,540 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2014-05-16 14:23:19 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.8ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35mItem Load (1.3ms)[0m  SELECT "items".* FROM "items"   ORDER BY (case when items.ancestry is null then 0 else 1 end), items.ancestry, created_at
+  Rendered items/_item.html.erb (1.7ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.6ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.8ms)
+  Rendered items/index.html.erb within layouts/application (26.9ms)
+WARNING on line 195 of /home/dusan/Documents/ruby/tree/app/assets/stylesheets/custom.css.scss: ".field_with_errors" failed to @extend ".control-group".
+  The selector ".control-group" was not found.
+  This will be an error in future releases of Sass.
+  Use "@extend .control-group !optional" if the extend should be able to fail.
+
+
+WARNING on line 196 of /home/dusan/Documents/ruby/tree/app/assets/stylesheets/custom.css.scss: ".field_with_errors" failed to @extend ".error".
+  The selector ".error" was not found.
+  This will be an error in future releases of Sass.
+  Use "@extend .error !optional" if the extend should be able to fail.
+
+
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 6233ms (Views: 6215.4ms | ActiveRecord: 3.8ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2014-05-16 14:24:00 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35mItem Load (1.2ms)[0m  SELECT "items".* FROM "items"   ORDER BY (case when items.ancestry is null then 0 else 1 end), items.ancestry, created_at
+  Rendered items/_item.html.erb (2.1ms)
+  Rendered items/_item.html.erb (0.7ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.7ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 78.2ms | ActiveRecord: 3.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2014-05-16 14:24:21 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35mItem Load (1.5ms)[0m  SELECT "items".* FROM "items"   ORDER BY (case when items.ancestry is null then 0 else 1 end), items.ancestry, created_at
+  Rendered items/_item.html.erb (1.9ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.6ms)
+  Rendered items/_item.html.erb (0.7ms)
+  Rendered items/_item.html.erb (0.6ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.6ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 91ms (Views: 71.1ms | ActiveRecord: 4.1ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Started GET "/" for 127.0.0.1 at 2014-05-16 14:24:42 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  [1m[35mItem Load (1.3ms)[0m  SELECT "items".* FROM "items"   ORDER BY (case when items.ancestry is null then 0 else 1 end), items.ancestry, created_at
+  Rendered items/_item.html.erb (2.0ms)
+  Rendered items/_item.html.erb (0.6ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.5ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/_item.html.erb (0.4ms)
+  Rendered items/index.html.erb within layouts/application (26.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 92ms (Views: 74.4ms | ActiveRecord: 3.9ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (112.0ms)[0m  [1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "ancestry" varchar(255)) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (160.4ms)[0m  [1mCREATE  INDEX "index_items_on_ancestry" ON "items" ("ancestry")[0m
+  [1m[35m (4.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (42.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (31.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140515183613')[0m
+  [1m[35m (64.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140515114153')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered items/index.html.erb (7.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}}
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.628829"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.628829"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 19ms (ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.653564"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.653564"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.661079"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.661079"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"   ORDER BY "items"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.669915"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.669915"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.679533"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.679533"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}, "id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.692024"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.692024"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.702781"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.702781"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.711675"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.711675"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.720878"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.720878"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.731658"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.731658"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.740070"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.740070"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by ItemsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.757402"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.757402"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"  WHERE (("items"."ancestry" LIKE '1/%' OR "items"."ancestry" = '1'))
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:40:18.771335"], ["name", "MyString"], ["updated_at", "2014-05-20 08:40:18.771335"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items"  WHERE (("items"."ancestry" LIKE '1/%' OR "items"."ancestry" = '1'))[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered items/_form.html.erb (35.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-05-20 10:40:18 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 3216ms (Views: 3201.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered items/_form.html.erb (4.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by MainController#home as HTML
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#new as HTML
+  Rendered items/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:38.992466"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:38.992466"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.009523"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.009523"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.022663"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.022663"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.036789"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.036789"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.049799"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.049799"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.062378"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.062378"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#update as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}, "id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-05-20 08:46:39.093391"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.093391"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "items"[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-05-20 08:46:39.106723"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.106723"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items/1
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"MyString"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.124134"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.124134"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items/1
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"   ORDER BY "items"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}}
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by ItemsController#create as HTML
+  Parameters: {"item"=>{"name"=>"invalid value"}}
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.156158"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.156158"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#index as HTML
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.169801"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.169801"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.182050"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.182050"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "items"
+Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"  WHERE (("items"."ancestry" LIKE '1/%' OR "items"."ancestry" = '1'))[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "items" WHERE "items"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/items
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "items"
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-05-20 08:46:39.203041"], ["name", "MyString"], ["updated_at", "2014-05-20 08:46:39.203041"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ItemsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT  "items".* FROM "items"  WHERE "items"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"  WHERE (("items"."ancestry" LIKE '1/%' OR "items"."ancestry" = '1'))
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/items
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by MainController#home as HTML
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2014-05-20 10:46:39 +0200
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 100ms (Views: 87.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
