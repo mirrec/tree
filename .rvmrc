@@ -1,0 +1,2 @@
+# toto je starsia syntax, teraz sa tusom pise uz len verzia
+rvm use ruby-2.1.2@dusan --create

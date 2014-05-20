@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+
+# toto moze byt, ja osobne pouzivam na specifikovanie verzie ruby rvm https://rvm.io/
+# konkretne si pozri subor .rvmrc
+# rvm ti umoznuje vytvarat balicky pre konkretny projekt
 ruby "2.1.2"
 
 gem "ancestry"
