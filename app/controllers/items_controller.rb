@@ -6,6 +6,11 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
+    # na urovni controlelra je vhodne sa snazit mat co namenej ifov
+    # implementacia, ktoru by som zvolil ja
+    Item.tree_search(params[:q])
+
+    # vsetko ostatne za tym az do respont_to bloku by som zmazal
     if params[:q]
 
 

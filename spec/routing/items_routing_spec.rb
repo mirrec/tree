@@ -1,5 +1,15 @@
 require "spec_helper"
 
+# ja osobne routing netestujem, pokial tam nie je nejaka specialne zlozita logika na urovni constrainov
+# http://guides.rubyonrails.org/routing.html#advanced-constraints
+# to ale testujem jednotlive triedy samostatne
+# request test ti totiz pokryva to ci ti ten routing finguje alebo nie
+# druha vec je to ze tu testujes ci ti spravne funguje cast
+#
+#   resources :items
+#
+# co teda vlastne testuje to co v railsoch maju urcite otestovane a ten test je teda duplicitny a zbytocny
+
 describe ItemsController do
   describe "routing" do
 
